@@ -27,7 +27,7 @@ export const addProduct=async (req:ExtendedRequest,res:Response) =>{
         .input('id',mssql.VarChar,id)
         .input('name',mssql.VarChar,name)
         .input('price',mssql.VarChar,price)
-        .execute('createproducts-procedures')
+        .execute('InsertProduct')
 
         return res.status(201).json({message:"Product added successfully!!"})
 
