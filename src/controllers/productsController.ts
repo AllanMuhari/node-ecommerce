@@ -29,7 +29,10 @@ export const addProduct=async (req:ExtendedRequest,res:Response) =>{
         .input('price',mssql.VarChar,price)
         .execute('createproducts-procedures')
 
-    }catch(error){
+        return res.status(201).json({message:"Product added successfully!!"})
 
+    }catch(error:any){
+        //server side error
+        return res.status(500).json(error.message)
     }
 }
