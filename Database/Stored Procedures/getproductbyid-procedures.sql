@@ -1,5 +1,5 @@
 CREATE PROCEDURE GetProductById
-  @productId INT
+  @productId VARCHAR(100)
 AS
 BEGIN
   SELECT id, name, price

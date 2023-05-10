@@ -1,7 +1,7 @@
 CREATE PROCEDURE InsertProduct
-  @id INT,
+  @id VARCHAR(100),
   @name VARCHAR(100),
-  @price DECIMAL(10,2)
+  @price VARCHAR(100)
 AS
 BEGIN
   IF NOT EXISTS (SELECT 1 FROM products WHERE id = @id)
@@ -15,4 +15,3 @@ BEGIN
     PRINT 'Product with the same ID already exists.';
   END
 END
-
