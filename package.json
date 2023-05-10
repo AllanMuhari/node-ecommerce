@@ -3,18 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+<<<<<<< HEAD
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:build": "tsc -w",
+    "start:run": "nodemon dist/index.js",
+=======
     "start:build": "tsc -w",
     "start:run": "nodemon dist/server.js",
+>>>>>>> b866f99ae008ec003ae7c54127e4e67e370172ec
     "start": "concurrently npm:start:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+    "bcrypt": "^5.1.0",
+=======
+>>>>>>> b866f99ae008ec003ae7c54127e4e67e370172ec
     "concurrently": "^8.0.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mssql": "^9.1.1",
+<<<<<<< HEAD
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22",
+=======
+>>>>>>> b866f99ae008ec003ae7c54127e4e67e370172ec
     "uuid": "^9.0.0"
   },
   "devDependencies": {
