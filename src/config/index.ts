@@ -32,3 +32,4 @@ sql.connect(sqlConfig).then(pool=>{
 })
 
 console.log(process.env.DB_USER)
+
